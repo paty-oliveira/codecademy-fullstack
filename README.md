@@ -6,4 +6,5 @@ The path is divided in several topics and learning goals, such as:
 
 - Introduction to HTML basics
   - [Fashion Blog](fashion-blog)
+  - [Wine Festival](wine-festival)
 
