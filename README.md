@@ -10,4 +10,5 @@ The path is divided in several topics and learning goals, such as:
   - [New York City Blog](new-york-city-blog)
 - **Introduction to CSS basics**
   - [Healthy Recipes](healthy-recipes)
+  - [Olivia Woodruff Portfolio](olivia-woodruff-portfolio)
 
