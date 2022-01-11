@@ -1,0 +1,41 @@
+body {
+    font-family: Helvetica, serif;
+    background: floralwhite;
+    font-size: 15px;
+}
+
+img {
+    width: 290px;
+    height: 290px;
+    line-height: 290px;
+    text-align: center;
+}
+
+.recipes {
+    color: SeaGreen;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.ingredients {
+    list-style: square;
+}
+
+.preparation {
+    font-size: 15px;
+}
+
+.cook-time {
+    font-weight: bold;
+}
+
+.time {
+    color: gray;
+}
+
+.external-link {
+    color: SeaGreen;
+}
+

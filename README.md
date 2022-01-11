@@ -9,4 +9,5 @@ The path is divided in several topics and learning goals, such as:
   - [Wine Festival](wine-festival)
   - [New York City Blog](new-york-city-blog)
 - **Introduction to CSS basics**
+  - [Healthy Recipes](healthy-recipes)
 
