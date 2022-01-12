@@ -11,4 +11,5 @@ The path is divided in several topics and learning goals, such as:
 - **Introduction to CSS basics**
   - [Healthy Recipes](healthy-recipes)
   - [Olivia Woodruff Portfolio](olivia-woodruff-portfolio)
+  - [Dasmoto's Arts & Crafts](dasmoto-arts-crafts)
 

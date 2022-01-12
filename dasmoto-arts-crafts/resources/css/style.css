@@ -1,0 +1,37 @@
+main, footer {
+    font-family: Helvetica, serif;
+    text-align: center;
+}
+
+header {
+    font-size: 30px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url("../images/spec-dasmoto.jpeg");
+}
+
+h2 {
+    font-family: Helvetica, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.starting-price {
+    font-weight: bold;
+    color: blue;
+}
+
+#brushes-header {
+    background-color: mediumspringgreen;
+}
+
+#frames-header {
+    background-color: lightcoral;
+}
+
+#paint-header {
+    background-color: skyblue;
+}
+
