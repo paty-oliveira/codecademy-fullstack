@@ -84,6 +84,8 @@ fabric.properties
 
 .idea/
 
+.DS_Store
+
 # Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
 
 *.iml
