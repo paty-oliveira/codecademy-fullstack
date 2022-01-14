@@ -13,4 +13,5 @@ The path is divided in several topics and learning goals, such as:
   - [Olivia Woodruff Portfolio](olivia-woodruff-portfolio)
   - [Dasmoto's Arts & Crafts](dasmoto-arts-crafts)
   - [Paint Store](paint-store)
+  - [Typography](typography)
 
