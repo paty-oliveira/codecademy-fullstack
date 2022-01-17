@@ -1,14 +1,36 @@
-header {
+body {
+    background-color: #b3f1ea;
+    font-family: 'Roboto Mono', monospace;
     text-align: center;
+    padding: 15px 75px 75px 75px;
+}
+
+nav {
+    display: block;
+    background-color: #68ece0;
 }
 
 nav a{
+    text-decoration: none;
+    color: #111111;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+section {
+    border-style: solid;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+table, tr, th, td {
+    border: 2px solid black;
     text-align: center;
+    margin: auto auto 1rem;
+}
+
+.logo {
     text-decoration: none;
 }
 
 
-
-section {
-    text-align: center;
-}
