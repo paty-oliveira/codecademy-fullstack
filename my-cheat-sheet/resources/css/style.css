@@ -1,5 +1,5 @@
 body {
-    background-color: #b3f1ea;
+    background-color: #f1e0e3;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     padding: 15px 75px 75px 75px;
@@ -7,7 +7,7 @@ body {
 
 nav {
     display: block;
-    background-color: #68ece0;
+    background-color: #e8d2d5;
 }
 
 nav a{
