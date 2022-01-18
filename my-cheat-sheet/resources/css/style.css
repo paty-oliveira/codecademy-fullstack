@@ -6,15 +6,21 @@ body {
 }
 
 nav {
-    display: block;
-    background-color: #e8d2d5;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    opacity: 1;
+    background-color:#e8d2d5;
+    width: 100%;
 }
 
 nav a{
     text-decoration: none;
     color: #111111;
     margin-left: 1em;
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 section {

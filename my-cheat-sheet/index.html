@@ -11,11 +11,12 @@
             <nav>
                 <a href="#html-section" rel="">HTML</a>
                 <a href="#css-section" rel="">CSS</a>
+                <a href="#about-me" rel="">About Me</a>
             </nav>
             <h1>CheatSheet</h1>
             <p>CheatSheet for front-end technologies, such as HTML and CSS.</p>
         </header>
-        <section class="html-section" >
+        <section id="html-section" >
             <h2>HTML</h2>
             <p><i>Hypertext Markup Language</i> is the skeleton of all web pages.
                 It provides structure to the content on a website, including text, images
@@ -249,7 +250,7 @@
                 </tbody>
             </table>
         </section>
-        <section class="css-section">
+        <section id="css-section">
             <h2>CSS</h2>
             <p><i>Cascading Style Sheets</i> is the language that provides style
                 to the content of an HTML page. This includes colors, fonts, positioning, layout, and more.
@@ -263,18 +264,98 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>selector1</td>
-                    <td>description1</td>
+                    <td>*</td>
+                    <td>All elements</td>
                 </tr>
                 <tr>
-                    <td>selector2</td>
-                    <td>description2</td>
+                    <td>div</td>
+                    <td>&lt;div&gt; selector</td>
+                </tr>
+                <tr>
+                    <td>div *</td>
+                    <td>All elements within &lt;div&gt;</td>
+                </tr>
+                <tr>
+                    <td>div span</td>
+                    <td>&lt;span&gt; within &lt;div&gt;</td>
+                </tr>
+                <tr>
+                    <td>div, span</td>
+                    <td>&lt;div&gt; and &lt;span&gt;</td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>Elements of class "class"</td>
+                </tr>
+                <tr>
+                    <td>#itemid</td>
+                    <td>Element with id "itemid"</td>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Display</td>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>Position</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Width</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Height</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Selector color</td>
+                </tr>
+                <tr>
+                    <td>background</td>
+                    <td>Background image</td>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>Background color</td>
+                </tr>
+                <tr>
+                    <td>text-indent</td>
+                    <td>Text indentation</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>Text alignment</td>
+                </tr>
+                <tr>
+                    <td>word-spacing</td>
+                    <td>Spacing between words</td>
+                </tr>
+                <tr>
+                    <td>letter-spacing</td>
+                    <td>Spacing between letters</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>Font family</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>Font size</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>Margin area on all four sides of an element</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>Padding area on all four sides of an element</td>
                 </tr>
                 </tbody>
             </table>
         </section>
     </main>
-    <footer>
+    <footer id="about-me" >
         <a class="logo" href="https://github.com/paty-oliveira" target="_blank">
             <img src="resources/images/github_logo.png" alt="">
         </a>
