@@ -15,4 +15,5 @@ The path is divided in several topics and learning goals, such as:
   - [Paint Store](paint-store)
   - [Typography](typography)
   - [My Cheat Sheet of HTML and CSS](my-cheat-sheet)
+  - [Davies's Burgers](davie-burgers)
 
