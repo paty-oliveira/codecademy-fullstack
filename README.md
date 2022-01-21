@@ -18,4 +18,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **Improved Styling with CSS**
   - [Davies's Burgers](davie-burgers)
   - [Broadway](broadway)
+  - [Journey Around the World](journey-arround-world)
 
