@@ -20,4 +20,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Broadway](broadway)
   - [Journey Around the World](journey-arround-world)
   - [Reel Good Reviews](reel-good-reviews)
+  - [The Summit](summit)
 
