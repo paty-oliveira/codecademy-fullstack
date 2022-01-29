@@ -1,0 +1,36 @@
+/*
+   Main components
+ */
+
+body {
+    background-color: #FFFAE3;
+    text-align: center;
+}
+header {
+    font-family: Roboto, Sans-Serif, serif;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.fundamentals{
+    display: inline-grid;
+    border: black solid;
+    justify-items: center;
+    width: 15%;
+    margin-bottom: 60px;
+    margin-left: 45px;
+    margin-right: 25px;
+    padding-bottom: 30px;
+}
+.fundamentals h2 {
+    font-family: Roboto, Sans-Serif, serif;
+}
+.fundamentals p {
+    font-family: Lora, Sans-Serif, serif;
+}
+footer {
+    margin-top: 5%;
+    text-align: center;
+}
