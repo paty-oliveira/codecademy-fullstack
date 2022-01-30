@@ -1,36 +1,47 @@
-/*
-   Main components
- */
-
 body {
-    background-color: #FFFAE3;
-    text-align: center;
+    background-image: url("../images/background.jpeg");
+    background-position: center;
+    background-size: cover;
 }
+
 header {
     font-family: Roboto, Sans-Serif, serif;
     font-size: 45px;
+    letter-spacing: 9px;
     display: flex;
     justify-content: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    padding: 5%;
 }
+
 .fundamentals{
-    display: inline-grid;
-    border: black solid;
-    justify-items: center;
-    width: 15%;
-    margin-bottom: 60px;
-    margin-left: 45px;
-    margin-right: 25px;
-    padding-bottom: 30px;
+    width: 50%;
+    height: 50%;
+    margin: 3% auto;
+    text-align: center;
 }
+.fundamentals div {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
 .fundamentals h2 {
     font-family: Roboto, Sans-Serif, serif;
+    font-size: 30px;
+    letter-spacing: 4px;
 }
-.fundamentals p {
+
+.fundamentals a {
     font-family: Lora, Sans-Serif, serif;
+    color: black;
+    text-decoration: none;
 }
+
+.fundamentals a:hover {
+    font-weight: bold;
+    color: #e32323;
+}
+
 footer {
-    margin-top: 5%;
+    margin-top: 12%;
     text-align: center;
 }
