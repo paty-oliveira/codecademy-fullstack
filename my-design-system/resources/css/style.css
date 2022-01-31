@@ -1,10 +1,11 @@
+/*
+    Components of the main webpage
+ */
 body {
-    background-image: url("../images/background.jpeg");
-    background-position: center;
-    background-size: cover;
+    background-color: ghostwhite;
 }
 
-header {
+.main-header {
     font-family: Roboto, Sans-Serif, serif;
     font-size: 45px;
     letter-spacing: 9px;
@@ -18,6 +19,7 @@ header {
     height: 50%;
     margin: 3% auto;
     text-align: center;
+
 }
 .fundamentals div {
     display: inline-block;
@@ -31,9 +33,8 @@ header {
 }
 
 .fundamentals a {
-    font-family: Lora, Sans-Serif, serif;
+    font-family: Lora, serif;
     color: black;
-    text-decoration: none;
 }
 
 .fundamentals a:hover {
@@ -42,6 +43,77 @@ header {
 }
 
 footer {
+    font-family: Lora, serif;
     margin-top: 12%;
     text-align: center;
 }
+
+
+/*
+    Components of the additional webpages (colors, fonts and buttons)
+ */
+
+.guidelines-header {
+    font-family: Roboto, Sans-Serif, serif;
+    font-size: 25px;
+    letter-spacing: 7px;
+    display: flex;
+    justify-content: center;
+    padding: 45px;
+}
+
+.guidelines {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.guidelines article {
+    justify-content: center;
+}
+
+.guidelines h2 {
+    font-family: Roboto, Sans-Serif, serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.guidelines p {
+    font-family: Lora, serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.guidelines li {
+    line-height: 30px;
+}
+
+.external-links {
+    text-align: center;
+}
+
+.external-links a {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 0 25px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
