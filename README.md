@@ -22,4 +22,6 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Reel Good Reviews](reel-good-reviews)
   - [The Summit](summit)
   - [My Design System Webpage](my-design-system)
+- **Making a Website Responsive**
+  - [Tsunami Coffee](tsunami-coffee)
 
