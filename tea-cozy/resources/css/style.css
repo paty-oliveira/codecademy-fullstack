@@ -1,0 +1,38 @@
+/*
+    Main Styling
+ */
+
+body {
+    font-family: Helvetica, serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+/*
+    Navigation Bar Styling
+ */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 69px;
+}
+
+.logo{
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+main {
+    margin-top: 50px;
+}
+
