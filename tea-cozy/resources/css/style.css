@@ -56,6 +56,9 @@ nav li {
     width: 100%;
 }
 
+/*
+    Month Tea Styling
+ */
 
 .month-tea-description {
     text-align: center;
@@ -87,4 +90,38 @@ nav li {
 .tea-img img {
     width: 300px;
     height: 200px;
+}
+
+/*
+    Tea Location Styling
+ */
+
+.location-container {
+    background-image: url("../images/locations-background.png");
+    background-position: center;
+    background-size: cover;
+    width: 1200px;
+    height: 400px;
+    margin: 50px auto auto;
+}
+
+.location-container h2 {
+    text-align: center;
+    border-bottom: 15px;
+}
+
+.location-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    text-align: center;
+}
+
+.location {
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    opacity: 1;
+    margin: auto 40px auto auto;
 }
