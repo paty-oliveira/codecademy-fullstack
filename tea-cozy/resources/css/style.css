@@ -19,6 +19,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 69px;
+    border-bottom: 1px solid seashell;
 }
 
 .logo{
@@ -32,7 +33,58 @@ nav li {
     margin-right: 10px;
 }
 
-main {
-    margin-top: 50px;
+/*
+    Mission Section Styling
+ */
+
+
+.mission-section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 1200px;
+    height: 700px;
+    background-image: url("../images/mission-background.png");
+    background-position: center;
+    background-size: cover;
 }
 
+.mission-description{
+    background-color: black;
+    width: 100%;
+}
+
+
+.month-tea-description {
+    text-align: center;
+    width: 1000px;
+    margin: 20px auto auto;
+}
+
+.tea-types-container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    margin: auto;
+}
+
+.tea-img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+
+.tea-img p {
+    margin: auto;
+    text-align: center;
+}
+
+.tea-img img {
+    width: 300px;
+    height: 200px;
+}
