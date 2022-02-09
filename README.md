@@ -26,4 +26,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Tsunami Coffee](tsunami-coffee)
   - [To-Do App](to-do-app)
   - [Tea Cozy](tea-cozy)
+  - [Fotomatic](fotomatic)
 
