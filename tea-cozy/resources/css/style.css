@@ -108,6 +108,7 @@ nav li {
 .location-container h2 {
     text-align: center;
     border-bottom: 15px;
+    padding-top: 30px;
 }
 
 .location-img-container {
@@ -124,4 +125,20 @@ nav li {
     background-color: black;
     opacity: 1;
     margin: auto 40px auto auto;
+}
+
+/*
+    Contacts Section Styling
+ */
+
+.contact-section {
+    text-align: center;
+}
+
+/*
+    Footer Section Styling
+ */
+
+#copywriter {
+    margin-left: 20px;
 }
