@@ -27,4 +27,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [To-Do App](to-do-app)
   - [Tea Cozy](tea-cozy)
   - [Fotomatic](fotomatic)
+  - [PupSpa](pup-spa)
 
