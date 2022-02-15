@@ -1,0 +1,28 @@
+/*
+    Navigation Bar
+ */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+}
+
+.navigation-item {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+    Banner Section
+ */
+
+.banner-container {
+    display: flex;
+}
+
