@@ -29,4 +29,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Fotomatic](fotomatic)
   - [PupSpa](pup-spa)
   - [My Company Webpage](my-company-homepage)
+  - [Crossfit Foz](crossfit-foz)
 
