@@ -1,0 +1,32 @@
+/*
+    Global Styling
+*/
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: black;
+}
+
+
+/*
+    Navigation Bar Styling
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(255, 204, 0);
+    padding: 20px;
+}
+
+.logo {
+    padding: 15px;
+    height: 70px;
+}
