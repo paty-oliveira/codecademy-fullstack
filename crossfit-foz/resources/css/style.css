@@ -121,7 +121,9 @@ header {
 }
 
 .pricing-item:hover {
-    background-color: grey;
+    background-image: url("../images/crossfit-badge.jpeg");
+    background-size: cover;
+    background-position: center;
     border: solid 2px;
     border-radius: 15px;
 }
@@ -159,5 +161,37 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.contact-item {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.contact-item:hover {
+    color: rgb(255, 204, 0);
+}
+
+#street-coordinates {
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+}
+
+#street-coordinates:hover {
+    color: rgb(255, 204, 0);
+}
+
+
+/*
+    Footer Section Styling
+*/
+
+footer p {
+    color: rgb(255, 204, 0);
+    padding-top: 30px;
+    text-align: center;
 }
