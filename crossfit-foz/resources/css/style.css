@@ -195,3 +195,15 @@ footer p {
     padding-top: 30px;
     text-align: center;
 }
+
+
+/*
+    Media queries for mobile
+*/
+
+@media only screen and (max-width: 480px) {
+    .pricing-container,
+    .contacts-container {
+        flex-direction: column;
+    }
+}
