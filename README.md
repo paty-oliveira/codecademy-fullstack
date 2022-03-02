@@ -30,4 +30,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [PupSpa](pup-spa)
   - [My Company Webpage](my-company-homepage)
   - [Crossfit Foz](crossfit-foz)
-
+- **JavaScript Part I**
+  - [Number Guesser](javascript-first-part/number-guesser)
