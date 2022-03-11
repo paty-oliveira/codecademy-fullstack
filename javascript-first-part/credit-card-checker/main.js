@@ -1,6 +1,19 @@
 // Add your functions below:
 function validateCreditCard(creditCardNumber) {
-    return true;
+    let oddSum = 0;
+    let evenSum = 0;
+    for (let i = 0; i < creditCardNumber.length; i++) {
+        if (i % 2 === 0) {
+            if (creditCardNumber[i] * 2 >= 10) {
+                evenSum += ((creditCardNumber[i] * 2) - 9);
+            } else {
+                evenSum += creditCardNumber[i] * 2;
+            }
+        } else {
+            oddSum += creditCardNumber[i];
+        }
+    }
+    return (oddSum + evenSum) % 10 === 0;
 }
 
 
@@ -33,7 +46,7 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 // Testing validateCreditCard() logic
 // Should return True
 console.log("Testing validateCreditCard() implementation: Test case I: Should return True");
-console.log("Test case I: Should return True")
+console.log("Test case I: Is a credit card valid? ")
 console.log(validateCreditCard(valid1) === true);
 console.log(validateCreditCard(valid2) === true);
 console.log(validateCreditCard(valid3) === true);
@@ -42,7 +55,7 @@ console.log(validateCreditCard(valid5) === true);
 
 
 // Should return False
-console.log("Test case I: Should return False")
+console.log("Test case I: Is a credit cart invalid")
 console.log(validateCreditCard(invalid1) === false);
 console.log(validateCreditCard(invalid2) === false);
 console.log(validateCreditCard(invalid3) === false);
