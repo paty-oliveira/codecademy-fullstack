@@ -17,6 +17,37 @@ function validateCreditCard(creditCardNumber) {
 }
 
 
+function findInvalidCards(creditCards) {
+    let invalidCards = [];
+    for (let creditCard in creditCards) {
+        for (let number in creditCard) {
+            let creditCardNumber = creditCards[number];
+            let isValid = validateCreditCard(creditCardNumber);
+
+            if (!isValid) {
+                invalidCards.push(creditCardNumber);
+            }
+        }
+    }
+    return invalidCards;
+}
+
+function idInvalidCardCompanies(creditCardNumbers) {
+    const companyCodes = { 3: "Amex (American Express)", 4: "Visa", 5: "Mastercard", 6: "Discover" }
+    let companies = [];
+
+    for (let i in creditCardNumbers) {
+        let number = creditCardNumbers[i];
+        let firstDigit = number[0];
+        companies.push(companyCodes[firstDigit]);
+    }
+    console.log(companies);
+
+    return companies;
+}
+
+const equals = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
 // Input data for testing all methods
 // All valid credit card numbers
 const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
@@ -61,3 +92,10 @@ console.log(validateCreditCard(invalid2) === false);
 console.log(validateCreditCard(invalid3) === false);
 console.log(validateCreditCard(invalid4) === false);
 console.log(validateCreditCard(invalid5) === false);
+
+console.log("Test case II: Return a list of credit card invalid")
+console.log(equals(findInvalidCards([invalid1, invalid2, valid1]), [invalid1, invalid2]))
+
+console.log("Test case III: Return a list of companies with credit card invalid")
+console.log(equals(idInvalidCardCompanies([invalid1, invalid2]), ['Visa', 'Mastercard']))
+console.log(equals(idInvalidCardCompanies([invalid3, invalid4]), ['Amex (American Express)', 'Discover']))
