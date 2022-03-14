@@ -33,3 +33,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **JavaScript Part I**
   - [Number Guesser](javascript-first-part/number-guesser)
   - [Credit Card Checker](javascript-first-part/credit-card-checker)
+  - [Mysterious Organism](javascript-first-part/mysterious-organism)
