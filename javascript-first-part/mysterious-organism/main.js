@@ -13,8 +13,6 @@ const mockUpStrand = () => {
     return newStrand
 }
 
-const equals = (a, b) => JSON.stringify(a) === JSON.stringify(b);
-
 
 // Create object factory multiple for the organism
 const pAequorFactory = (specimenNum, dna) => {
@@ -30,6 +28,11 @@ const pAequorFactory = (specimenNum, dna) => {
             const differentDNABases = this.dna.filter(base => { return !otherSpecimenDNA.includes(base) });
             const percentageCommonDNA = Math.floor(((this.dna.length - differentDNABases.length) / this.dna.length) * 100);
             return `specimen #1 and specimen #2 have ${percentageCommonDNA}% DNA in common`;
+        },
+        willLikelySurvive() {
+            const GCContent = this.dna.filter(base => { return base === 'G' || base === 'C' })
+            const percentageGCContent = Math.floor(GCContent.length / this.dna.length * 100);
+            return (percentageGCContent > 60);
         }
     }
 }
@@ -62,3 +65,11 @@ specimenDNA = ['T', 'G', 'G', 'G', 'T', 'T', 'C', 'C', 'C', 'G', 'G', 'T', 'T', 
 actualDNA = specimenNumThree.compareDNA(specimenDNA);
 expectedComparison = "specimen #1 and specimen #2 have 93% DNA in common";
 console.log("Should returns 93% of DNA in common ->", actualDNA === expectedComparison);
+
+
+// Testing Space for willLikelySurvive() method behavior
+const specimenNumFour = pAequorFactory(4, ['A', 'T', 'G', 'G', 'T', 'T', 'C', 'C', 'C', 'G', 'G', 'G', 'A', 'C', 'G'])
+console.log("The specimen has at least 60% of GC content on DNA ->", specimenNumFour.willLikelySurvive() === true)
+
+const specimenNumFive = pAequorFactory(5, ['A', 'T', 'T', 'T', 'A', 'T', 'C', 'C', 'C', 'G', 'G', 'G', 'A', 'C', 'G']);
+console.log("The specimen has not 60% of GC content on DNA, so will not survive ->", specimenNumFive.willLikelySurvive() === false);
