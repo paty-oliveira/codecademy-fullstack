@@ -37,6 +37,20 @@ const pAequorFactory = (specimenNum, dna) => {
     }
 }
 
+// Return an array of pAequor species that can survive in their natural environment
+const createpViableAerquourSpecimen = (numberSpecimen) => {
+    let specimens = [];
+    let specimenId = 1;
+
+    while (specimens.length < numberSpecimen) {
+        let newSpecimen = pAequorFactory(specimenId, mockUpStrand());
+        if (newSpecimen.willLikelySurvive()) {
+            specimens.push(newSpecimen);
+        }
+        specimenId++;
+    }
+    return specimens;
+}
 
 
 // Testing Space of P. aequor factory
@@ -73,3 +87,11 @@ console.log("The specimen has at least 60% of GC content on DNA ->", specimenNum
 
 const specimenNumFive = pAequorFactory(5, ['A', 'T', 'T', 'T', 'A', 'T', 'C', 'C', 'C', 'G', 'G', 'G', 'A', 'C', 'G']);
 console.log("The specimen has not 60% of GC content on DNA, so will not survive ->", specimenNumFive.willLikelySurvive() === false);
+
+
+// Testing Space for createpAerquourSpecimen() method behavior
+const randomSpecimensOne = createpViableAerquourSpecimen(1);
+console.log("Number of Specimen created should be 1 ->", randomSpecimensOne.length === 1);
+
+const randomSpecimensTwo = createpViableAerquourSpecimen(30);
+console.log("Number of Specimen created should be 30 ->", randomSpecimensTwo.length === 30);
