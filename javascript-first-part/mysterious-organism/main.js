@@ -13,6 +13,12 @@ const mockUpStrand = () => {
     return newStrand
 }
 
+const DNARules = {
+    'A': 'T',
+    'G': 'C',
+    'T': 'A',
+    'C': 'G'
+}
 
 // Create object factory multiple for the organism
 const pAequorFactory = (specimenNum, dna) => {
@@ -21,8 +27,7 @@ const pAequorFactory = (specimenNum, dna) => {
         dna: dna,
         mutate() {
             const mutationPosition = Math.floor(Math.random() * 15);
-            const mutationBase = returnRandBase();
-            this.dna[mutationPosition] = mutationBase;
+            this.dna[mutationPosition] = returnRandBase();
         },
         compareDNA(otherSpecimenDNA) {
             const differentDNABases = this.dna.filter(base => { return !otherSpecimenDNA.includes(base) });
@@ -33,6 +38,13 @@ const pAequorFactory = (specimenNum, dna) => {
             const GCContent = this.dna.filter(base => { return base === 'G' || base === 'C' })
             const percentageGCContent = Math.floor(GCContent.length / this.dna.length * 100);
             return (percentageGCContent > 60);
+        },
+        complementStrand() {
+            let complementDNA = [];
+            for (let base = 0; base < this.dna.length; base++) {
+                complementDNA.push(DNARules[this.dna[base]]);
+            }
+            return complementDNA;
         }
     }
 }
@@ -52,6 +64,8 @@ const createpViableAerquourSpecimen = (numberSpecimen) => {
     return specimens;
 }
 
+// Validate if two arrays has the same values exactly in the same order
+const equals = (arrayA, arrayB) => { return JSON.stringify(arrayA) === JSON.stringify(arrayB) }
 
 // Testing Space of P. aequor factory
 const specimenNumOne = pAequorFactory(1, mockUpStrand())
@@ -66,7 +80,6 @@ console.log("The DNA strand length of second specimum should be 15 bases -> ", s
 specimenNumOne.mutate()
 console.log("The DNA strand length of first specimum mutated should be 15 bases -> ", specimenNumOne.dna.length === 15);
 
-
 // Testing Space for compareDNA() method behavior
 const specimenNumThree = pAequorFactory(3, ['A', 'G', 'G', 'G', 'T', 'T', 'C', 'C', 'C', 'G', 'G', 'T', 'T', 'C', 'G'])
 let specimenDNA = ['A', 'G', 'G', 'G', 'T', 'T', 'C', 'C', 'C', 'G', 'G', 'T', 'T', 'C', 'G'];
@@ -74,12 +87,10 @@ let actualDNA = specimenNumThree.compareDNA(specimenDNA);
 let expectedComparison = "specimen #1 and specimen #2 have 100% DNA in common";
 console.log("All bases are identical on the same location, so should returns 100% of DNA in common ->", actualDNA === expectedComparison);
 
-
 specimenDNA = ['T', 'G', 'G', 'G', 'T', 'T', 'C', 'C', 'C', 'G', 'G', 'T', 'T', 'C', 'G'];
 actualDNA = specimenNumThree.compareDNA(specimenDNA);
 expectedComparison = "specimen #1 and specimen #2 have 93% DNA in common";
 console.log("Should returns 93% of DNA in common ->", actualDNA === expectedComparison);
-
 
 // Testing Space for willLikelySurvive() method behavior
 const specimenNumFour = pAequorFactory(4, ['A', 'T', 'G', 'G', 'T', 'T', 'C', 'C', 'C', 'G', 'G', 'G', 'A', 'C', 'G'])
@@ -88,10 +99,15 @@ console.log("The specimen has at least 60% of GC content on DNA ->", specimenNum
 const specimenNumFive = pAequorFactory(5, ['A', 'T', 'T', 'T', 'A', 'T', 'C', 'C', 'C', 'G', 'G', 'G', 'A', 'C', 'G']);
 console.log("The specimen has not 60% of GC content on DNA, so will not survive ->", specimenNumFive.willLikelySurvive() === false);
 
-
 // Testing Space for createpAerquourSpecimen() method behavior
 const randomSpecimensOne = createpViableAerquourSpecimen(1);
 console.log("Number of Specimen created should be 1 ->", randomSpecimensOne.length === 1);
 
 const randomSpecimensTwo = createpViableAerquourSpecimen(30);
 console.log("Number of Specimen created should be 30 ->", randomSpecimensTwo.length === 30);
+
+// Testing Space for complementStrand() method behavior
+const specimenNumSix = pAequorFactory(6, ['A', 'G', 'T', 'C']);
+let actualComplementStrand = specimenNumSix.complementStrand();
+let expectedComplementStrand = ['T', 'C', 'A', 'G'];
+console.log("Should return the expected complement DNA strand", equals(actualComplementStrand, expectedComplementStrand));
