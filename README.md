@@ -34,3 +34,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Number Guesser](javascript-first-part/number-guesser)
   - [Credit Card Checker](javascript-first-part/credit-card-checker)
   - [Mysterious Organism](javascript-first-part/mysterious-organism)
+- **Building Interactive Website**
+  - [Piano Keys](piano-keys)
