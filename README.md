@@ -36,3 +36,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Mysterious Organism](javascript-first-part/mysterious-organism)
 - **Building Interactive Website**
   - [Piano Keys](piano-keys)
+  - [Form a Story](form-story)
