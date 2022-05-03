@@ -30,10 +30,11 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [PupSpa](pup-spa)
   - [My Company Webpage](my-company-homepage)
   - [Crossfit Foz](crossfit-foz)
-- **JavaScript Part I**
-  - [Number Guesser](javascript-first-part/number-guesser)
-  - [Credit Card Checker](javascript-first-part/credit-card-checker)
-  - [Mysterious Organism](javascript-first-part/mysterious-organism)
+- **JavaScript**
+  - [Number Guesser](javascript-section/number-guesser)
+  - [Credit Card Checker](javascript-section/credit-card-checker)
+  - [Mysterious Organism](javascript-section/mysterious-organism)
+  - [Build a Library](javascript-section/library)
 - **Building Interactive Website**
   - [Piano Keys](piano-keys)
   - [Form a Story](form-story)
