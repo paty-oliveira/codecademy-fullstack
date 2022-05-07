@@ -96,4 +96,12 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
+# Node
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+
+
 # End of https://www.toptal.com/developers/gitignore/api/webstorm+all
