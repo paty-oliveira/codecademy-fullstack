@@ -14,7 +14,21 @@ class Field {
         this.__playBoard.forEach(element => {
             console.log(element.join(''))
         });
+
     }
+
+    move() {
+        let direction = prompt('Which way?').toLowerCase();
+        direction = String(direction)
+
+        if (['d', 'l', 'r', 'u'].includes(direction)) {
+            console.log('In Bounds')
+        } else {
+            console.log('Out of Bounds')
+        }
+
+    }
+
 }
 
 
