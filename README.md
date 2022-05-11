@@ -40,3 +40,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **Building Interactive Website**
   - [Piano Keys](piano-keys)
   - [Form a Story](form-story)
+- **JavasScript Testing**
+  - [Rooster Regulation]()
