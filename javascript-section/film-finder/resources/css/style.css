@@ -50,7 +50,8 @@ img#moviePoster {
 }
 
 #movieTitle,
-#movieOverview {
+#movieOverview,
+#movieReleaseDate {
     padding: 32px;
 }
 
