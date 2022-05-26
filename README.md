@@ -44,3 +44,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **JavasScript Testing**
   - [Rooster Regulation](javascript-section/rooster-regulation/)
   - [Factorial Feature](javascript-section/factorial-feature/)
+- **React**
