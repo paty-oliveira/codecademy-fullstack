@@ -45,3 +45,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Rooster Regulation](javascript-section/rooster-regulation/)
   - [Factorial Feature](javascript-section/factorial-feature/)
 - **React**
+  - [Authorization Form](react-section/authorization-form/)
