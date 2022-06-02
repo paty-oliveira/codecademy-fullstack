@@ -46,3 +46,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Factorial Feature](javascript-section/factorial-feature/)
 - **React**
   - [Authorization Form](react-section/authorization-form/)
+  - [Random Color Picker](react-section/random-color-picker/)
