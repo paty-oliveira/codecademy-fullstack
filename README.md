@@ -48,3 +48,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Authorization Form](react-section/authorization-form/)
   - [Random Color Picker](react-section/random-color-picker/)
   - [Video Player](react-section/video-player/)
+  - [Social Network for Pets](react-section/social-network-pets/)
