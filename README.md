@@ -50,3 +50,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Video Player](react-section/video-player/)
   - [Social Network for Pets](react-section/social-network-pets/)
   - [Jammming](react-section/jammming/)
+  - [Passing Thoughts](react-section/passing-thoughts)
