@@ -51,3 +51,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Social Network for Pets](react-section/social-network-pets/)
   - [Jammming](react-section/jammming/)
   - [Passing Thoughts](react-section/passing-thoughts)
+  - [Copycat](react-section/copycat/)
