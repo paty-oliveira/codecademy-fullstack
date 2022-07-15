@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContactsPage /> should render ContactsPage properly 1`] = `ShallowWrapper {}`;
+
+exports[`<ContactsPage /> should render contacts with the given information 1`] = `ShallowWrapper {}`;

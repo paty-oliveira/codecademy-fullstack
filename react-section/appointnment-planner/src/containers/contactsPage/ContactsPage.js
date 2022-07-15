@@ -1,32 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-export const ContactsPage = () => {
-  /*
-  Define state variables for 
-  contact info and duplicate check
-  */
+import { ContactForm } from '../../components/contactForm/ContactForm';
+import { TileList } from '../../components/tileList/TileList';
+
+export const ContactsPage = (props) => {
+
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [duplicates, setDuplicates] = useState(false);
+
+  const contacts = props.contacts;
+  const addNewContact = props.addContact;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    /*
-    Add contact info and clear data
-    if the contact name is not a duplicate
-    */
+
+    if (!duplicates) {
+      addNewContact(name, phone, email);
+      setName('');
+      setPhone('');
+      setEmail('');
+    }
   };
 
-  /*
-  Using hooks, check for contact name in the 
-  contacts array variable in props
-  */
+  useEffect(() => {
+    const nameExists = contacts.includes(name);
+    setDuplicates(nameExists);
+  }, [contacts, name]);
 
   return (
     <div>
       <section>
-        <h2>Add Contact</h2> 
+        <h2>Add Contact</h2>
+        <ContactForm
+          name={name}
+          phone={phone}
+          email={email}
+          setName={setName}
+          setPhone={setPhone}
+          setEmail={setEmail}
+          handleSubmit={handleSubmit}
+        />
       </section>
       <hr />
       <section>
         <h2>Contacts</h2>
+        <TileList
+          contacts={contacts}
+        />
       </section>
     </div>
   );
