@@ -25,7 +25,13 @@ export const ContactsPage = (props) => {
   };
 
   useEffect(() => {
-    const nameExists = contacts.includes(name);
+    const uniqueContactNames = new Set(contacts.map(contact => contact.name));
+    let nameExists = false;
+
+    if (uniqueContactNames.size < contacts.length){
+      nameExists = true;
+    }
+
     setDuplicates(nameExists);
   }, [contacts, name]);
 
