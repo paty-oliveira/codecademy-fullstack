@@ -54,3 +54,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Copycat](react-section/copycat/)
   - [React Router Lesson Starter](react-section/react-router-lesson-starter/)
   - [Adopt a pet](react-section/adopt-a-pet/)
+  - [Appointment Planner](react-section/appointnment-planner/)
