@@ -12,12 +12,12 @@ export const AppointmentsPage = (props) => {
 
   const appointments = props.appointments;
   const contacts = props.contacts;
-  const addNewAppointment = props.addNewAppointment;
+  const addAppointment = props.addAppointment;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    addNewAppointment(title, contact, date, time);
+    addAppointment(title, contact, date, time);
     setTitle('');
     setContact('');
     setDate('');

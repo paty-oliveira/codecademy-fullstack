@@ -48,8 +48,10 @@ export const AppointmentForm = ({
         Time
         <input type='time' value={time} onChange={handleTimeChange} />
       </label>
+      <label> Contact
+        <ContactPicker contacts={contacts} setContact={setContact} />
+      </label>
       <button type="submit">Submit</button>
-      <ContactPicker contacts={contacts} />
     </form>
   );
 };
