@@ -50,7 +50,7 @@ function App() {
             <ContactsPage contacts={contacts} addContact={addContact} />
           </Route>
           <Route path={ROUTES.APPOINTMENTS}>
-            <AppointmentsPage appointments={appointments} addAppointment={addAppointment} />
+            <AppointmentsPage contacts={contacts} appointments={appointments} addAppointment={addAppointment} />
           </Route>
         </Switch>
       </main>
