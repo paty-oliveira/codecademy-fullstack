@@ -2,7 +2,7 @@ import React from "react";
 
 export const Tile = (props) => {
 
-  const contactAttr = Object.values(props.contact);
+  const contactAttr = Object.values(props.tile);
 
   return (
     <div className="tile-container">

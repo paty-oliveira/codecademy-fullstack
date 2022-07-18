@@ -4,12 +4,12 @@ import { Tile } from '../tile/Tile';
 
 export const TileList = (props) => {
 
-  const contacts = props.contacts;
+  const contacts = props.tile;
 
   return (
     <div>
       {contacts.map((contact, index) => {
-        return <Tile contact={contact} key={index} />
+        return <Tile tile={contact} key={index} />
       })}
     </div>
   );
