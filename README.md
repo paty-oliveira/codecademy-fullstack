@@ -55,3 +55,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [React Router Lesson Starter](react-section/react-router-lesson-starter/)
   - [Adopt a pet](react-section/adopt-a-pet/)
   - [Appointment Planner](react-section/appointnment-planner/)
+- **Redux**
+  - [Codecademy Store](redux-section/codecademy-store/)
