@@ -57,3 +57,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Appointment Planner](react-section/appointnment-planner/)
 - **Redux**
   - [Codecademy Store](redux-section/codecademy-store/)
+  - [Matching Memory](redux-section/matching-memory/Adopt)
