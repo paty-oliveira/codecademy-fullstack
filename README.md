@@ -58,3 +58,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **Redux**
   - [Codecademy Store](redux-section/codecademy-store/)
   - [Matching Memory](redux-section/matching-memory/Adopt)
+  - [Expense Tracker](redux-section/expense-tracker/)
