@@ -30,7 +30,7 @@ const options = {
     }
 }
 
-const topicsSlice = createSlice(options);
+export const topicsSlice = createSlice(options);
 
 export const selectTopics = state => state.topics.topics;
 

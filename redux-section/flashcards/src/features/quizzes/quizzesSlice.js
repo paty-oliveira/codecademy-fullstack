@@ -20,7 +20,7 @@ const options = {
     }
 };
 
-const quizzesSlice = createSlice(options);
+export const quizzesSlice = createSlice(options);
 
 export const selectQuizzes = state => state.quizzes.quizzes;
 
