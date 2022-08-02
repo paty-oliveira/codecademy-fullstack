@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 import ROUTES from "../app/routes";
 import { selectTopics } from "../features/topics/topicsSlice";
 import { addQuizThunk } from "../features/quizzes/quizzesSlice";
+import { addCard } from "../features/cards/cardsSlice";
+
 
 export default function NewQuizForm() {
   const [name, setName] = useState("");
@@ -21,6 +23,16 @@ export default function NewQuizForm() {
     }
 
     const cardIds = [];
+
+    cards.forEach(card => {
+      const id = uuidv4()
+      dispatch(addCard({
+        id: id,
+        front: card.front,
+        back: card.back
+      }))
+      cardIds.push(id);
+    })
 
     const newQuizPayload = {
       id: uuidv4(),

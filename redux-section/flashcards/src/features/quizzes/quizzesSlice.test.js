@@ -7,7 +7,7 @@ describe('quizzesSlice state', () => {
         expect(currentState).toEqual(expectedState);
     });
 
-    it('should add a new quiz ', () => {
+    it('should add a new quiz', () => {
         const previousState = {
             quizzes: {}
         }
@@ -33,7 +33,7 @@ describe('quizzesSlice state', () => {
         expect(resultState).toEqual(expectedState);
     });
 
-    it('should add a new quiz to an existing quizzes object ', () => {
+    it('should add a new quiz to an existing quizzes object', () => {
         const previousState = {
             quizzes: {
                 '456': {
