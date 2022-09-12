@@ -61,5 +61,6 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Expense Tracker](redux-section/expense-tracker/)
   - [Flashcards](redux-section/flashcards/)
   - [News Reader](redux-section/news-reader/)
- - **Linear Data Structures**
+- **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
+  - [Linked Lists](linear-data-structures/linked-lists/)
