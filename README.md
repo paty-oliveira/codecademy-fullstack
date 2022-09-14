@@ -64,3 +64,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
   - [Linked Lists](linear-data-structures/linked-lists/)
+  - [Doubly Linked Lists](linear-data-structures/doubly-linked-lists/)
