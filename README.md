@@ -67,3 +67,5 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Doubly Linked Lists](linear-data-structures/doubly-linked-lists/)
   - [Queue](linear-data-structures/queue/)
   - [Stack](linear-data-structures/stack/)
+- **Complex Data Structures**
+  - [Hash Maps](complex-data-structures/hash-maps/)
