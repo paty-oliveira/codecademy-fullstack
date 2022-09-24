@@ -69,3 +69,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Stack](linear-data-structures/stack/)
 - **Complex Data Structures**
   - [Hash Maps](complex-data-structures/hash-maps/)
+  - [Heaps](complex-data-structures/heaps/)
