@@ -70,3 +70,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **Complex Data Structures**
   - [Hash Maps](complex-data-structures/hash-maps/)
   - [Heaps](complex-data-structures/heaps/)
+  - [Graphs](complex-data-structures/graphs/)
