@@ -73,3 +73,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Graphs](complex-data-structures/graphs/)
 - **Algorithms**
   - [Bubble Sort](algorithms/bubble-sort/)
+  - [Merge Sort](algorithms/merge-sort/)
