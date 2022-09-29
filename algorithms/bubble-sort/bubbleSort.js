@@ -22,4 +22,4 @@ const bubbleSort = input => {
     return input;
 };
 
-export default bubbleSort;
+export default {bubbleSort, swap};

@@ -74,3 +74,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **Algorithms**
   - [Bubble Sort](algorithms/bubble-sort/)
   - [Merge Sort](algorithms/merge-sort/)
+  - [Quick Sort](algorithms/quick-sort/)
