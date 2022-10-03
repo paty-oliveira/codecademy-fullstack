@@ -76,3 +76,4 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Merge Sort](algorithms/merge-sort/)
   - [Quick Sort](algorithms/quick-sort/)
   - [Binary Search](algorithms/binary-search/)
+  - [Binary Search Tree](algorithms/binary-search-tree/)
