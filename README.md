@@ -63,6 +63,7 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [News Reader](redux-section/news-reader/)
 - **Testing React with Jest and React Testing Library**
   - [Color Button](testing-section/color-button)
+  - [Sundaes on Demand](testing-section/sundaes-on-demand)
 - **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
   - [Linked Lists](linear-data-structures/linked-lists/)
