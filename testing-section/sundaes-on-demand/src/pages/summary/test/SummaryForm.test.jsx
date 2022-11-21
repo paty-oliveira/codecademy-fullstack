@@ -38,4 +38,22 @@ describe("<SummaryForm />", () => {
         userEvent.click(checkbox);
         expect(confirmButton).toBeDisabled();
     })
+
+    test("Popover responds to hover", async () => {
+        render(<SummaryForm />);
+
+        // popover start out hidden
+        const nullPopover = screen.queryByText(/no ice cream will actually be delivered/i);
+        expect(nullPopover).not.toBeInTheDocument();
+
+        // popover appears on mouseover of checkbox label
+        const termsAndConditions = screen.getByText(/terms and conditions/i);
+        userEvent.hover(termsAndConditions);
+        const popover = screen.getByText(/no ice cream will actually be delivered/i);
+        expect(popover).toBeInTheDocument();
+
+        // popover disappears when me mouse out
+        userEvent.unhover(termsAndConditions);
+        expect(popover).not.toBeInTheDocument();
+    })
 })
