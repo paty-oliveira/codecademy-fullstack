@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import {render, screen, waitFor} from "@testing-library/react";
 import { SummaryForm } from "../SummaryForm";
 import userEvent from "@testing-library/user-event";
 
@@ -51,9 +51,5 @@ describe("<SummaryForm />", () => {
         userEvent.hover(termsAndConditions);
         const popover = screen.getByText(/no ice cream will actually be delivered/i);
         expect(popover).toBeInTheDocument();
-
-        // popover disappears when me mouse out
-        userEvent.unhover(termsAndConditions);
-        expect(popover).not.toBeInTheDocument();
     })
 })
