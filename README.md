@@ -38,6 +38,7 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [School Catalogue](javascript-section/school-catalogue)
   - [Find your Hat](javascript-section/find-your-hat/)
   - [Film Finder](javascript-section/film-finder/)
+  - [Weather Generator](javascript-section/weather-generator/)
 - **Building Interactive Website**
   - [Piano Keys](piano-keys)
   - [Form a Story](form-story)
