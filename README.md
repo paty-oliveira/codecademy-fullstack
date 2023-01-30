@@ -1,6 +1,6 @@
 # Frontend Engineer Path
-This repository stores the projects made during the Frontend Engineer path
-from [Codecademy](https://www.codecademy.com/learn/paths/front-end-engineer-career-path).
+This repository stores the projects made during the Frontend Engineer path and Backend Engineer path
+from Codecademy.
 
 The path is divided in several topics and learning goals. Each topic addresses the projects made on.
 
@@ -65,6 +65,8 @@ The path is divided in several topics and learning goals. Each topic addresses t
 - **Testing React with Jest and React Testing Library**
   - [Color Button](testing-section/color-button)
   - [Sundaes on Demand](testing-section/sundaes-on-demand)
+- **Building a Backend with Express.js**
+  - [Quote API](express-section/quote-api)
 - **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
   - [Linked Lists](linear-data-structures/linked-lists/)
