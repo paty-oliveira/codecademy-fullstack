@@ -67,6 +67,7 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Sundaes on Demand](testing-section/sundaes-on-demand)
 - **Building a Backend with Express.js**
   - [Quote API](express-section/quote-api)
+  - [Boss Machine API](express-section/boss-machine)
 - **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
   - [Linked Lists](linear-data-structures/linked-lists/)
