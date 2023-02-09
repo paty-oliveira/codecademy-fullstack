@@ -16,7 +16,7 @@ minionsApi.get('/:minionId', (req, res) => {
     if (minionFound) {
         res.send(minionFound);
     }
-    res.status(404).send();
+    return res.status(404).send();
 });
 
 minionsApi.put('/:minionId', (req, res) => {
@@ -28,12 +28,12 @@ minionsApi.put('/:minionId', (req, res) => {
        const updated = updateInstanceInDatabase('minions', allMinions[minionToUpdate]);
        res.send(updated);
    }
-   res.status(404).send();
+   return res.status(404).send();
 });
 
 minionsApi.post('/', (req, res) => {
     const newMinion = addToDatabase('minions', req.body);
-    res.status(201).send(newMinion);
+    return res.status(201).send(newMinion);
 });
 
 minionsApi.delete('/:minionId', (req, res) => {
@@ -45,7 +45,7 @@ minionsApi.delete('/:minionId', (req, res) => {
         const isDeleted = deleteFromDatabasebyId('minions', minionToDelete)
         res.status(204).send(isDeleted);
     }
-    res.status(404).send();
+    return res.status(404).send();
 })
 
 module.exports = minionsApi;
