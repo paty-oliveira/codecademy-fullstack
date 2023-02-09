@@ -1,6 +1,5 @@
 const express = require('express');
 const {getAllFromDatabase, getFromDatabaseById, updateInstanceInDatabase, addToDatabase, deleteFromDatabasebyId} = require('./db');
-const {min} = require("mocha/lib/reporters");
 const minionsApi = express.Router();
 
 minionsApi.get('/', (req, res) => {
