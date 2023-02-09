@@ -1,7 +1,7 @@
 const express = require('express');
 const {getAllFromDatabase, getFromDatabaseById, updateInstanceInDatabase, addToDatabase, deleteFromDatabasebyId} = require("./db");
 const ideasApi = express.Router();
-
+const checkMillionDollarIdea = require('./checkMillionDollarIdea');
 ideasApi.get('/', (req, res) => {
     const allIdeas = getAllFromDatabase('ideas');
     return res.send(allIdeas);
@@ -15,7 +15,7 @@ ideasApi.get('/:ideaId', (req, res) => {
     return res.status(404).send();
 });
 
-ideasApi.put('/:ideaId', (req, res) => {
+ideasApi.put('/:ideaId', checkMillionDollarIdea, (req, res) => {
     const ideaToUpdate = getFromDatabaseById('ideas', req.params.ideaId);
     const allIdeas = getAllFromDatabase('ideas');
 
@@ -27,7 +27,7 @@ ideasApi.put('/:ideaId', (req, res) => {
     return res.status(404).send();
 });
 
-ideasApi.post('/', (req, res) => {
+ideasApi.post('/', checkMillionDollarIdea, (req, res) => {
     const newIdea = addToDatabase('ideas', req.body);
     return res.status(201).send(newIdea)
 });
