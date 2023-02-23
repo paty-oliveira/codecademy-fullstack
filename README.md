@@ -1,4 +1,4 @@
-# Frontend Engineer Path
+# FullStack Path
 This repository stores the projects made during the Frontend Engineer path and Backend Engineer path
 from Codecademy.
 
