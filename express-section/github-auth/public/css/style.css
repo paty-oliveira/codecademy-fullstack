@@ -1,0 +1,18 @@
+nav {
+  height: 5rem;
+  margin-bottom:5rem;
+}
+
+nav > div {
+  line-height: 5rem;;
+}
+
+.login {
+  border: 1px solid gray; 
+  border-radius: 2rem;
+  padding: 5rem;
+}
+
+.center {
+  text-align:center;
+}

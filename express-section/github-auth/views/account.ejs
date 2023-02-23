@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="six columns">
+    <h1><%= user.username %></h1>
+    <p>ID: <%= user.id %></p>
+    <p>Name: <%= user.displayName %></p>
+    <p>Bio: <%= user._json.bio %></p>
+    <p>GitHub: <a href="<%= user._json.html_url %>">Link</a></p>
+  </div>
+
+  <div class="six columns">
+    <img src="<%= user.photos[0].value %>" alt="Avatar">
+  </div>
+</div>

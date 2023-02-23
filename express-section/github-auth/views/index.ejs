@@ -1,0 +1,11 @@
+<div class="center">
+
+<% if (!user) { %>
+	
+	<h2>Welcome! Please log in to continue. </h2>
+<% } else { %>
+	<h2>Hello, <%= user.displayName %>.</h2>
+	<a href="/account">Visit the account page to see your profile.</a>
+<% } %>
+
+</div>
