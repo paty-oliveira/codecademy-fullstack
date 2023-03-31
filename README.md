@@ -70,6 +70,8 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Boss Machine API](express-section/boss-machine)
   - [Dognation: Password Authentication](express-section/dognation)
   - [Github Auth](express-section/github-auth)
+- **API Development with Swagger
+  - [Orders](api-development/orders)
 - **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
   - [Linked Lists](linear-data-structures/linked-lists/)

@@ -1,0 +1,151 @@
+openapi: 3.0.1
+info:
+  title: Online Order API
+  version: 1.0.0
+  description: A basic API for working with the Swagger tools.
+paths:
+  /orders:
+    summary: Get all of the order data.
+    description: This path is used to retrieve order data form the orders.json file.
+    get:
+      summary: Gets the order data
+      description: Retrieve the order information from the orders.json file.
+      operationId: get_orders
+      responses:
+        '200':
+          content:
+            application/json:
+              examples:
+                orders:
+                  value: >-
+                    {"orders":[{"name":"Carey
+                    Maynard","id":"001","state":"pending"},{"name":"Angelo
+                    Ayala","id":"002","state":"canceled"},{"name":"Regina
+                    Yates","id":"003","state":"pending"},{"name":"Elliott
+                    Mcclure","id":"004","state":"pending"}]}
+          description: Success
+      tags:
+        - Orders
+  /neworder:
+    summary: Add new orders
+    description: This path is used to add new orders to the orders.json file.
+    post:
+      summary: Add a new order
+      description: >-
+        This operation adds a new order to the list of orders found in the
+        orders.json file.
+      operationId: new_order
+      requestBody:
+        description: A new order object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+        required: true
+      responses:
+        '400':
+          content:
+            text/plain; charset=utf-8:
+              examples:
+                Error:
+                  value: Invalid Argument
+          description: Invalid Argument Provided
+        '200':
+          content:
+            text/plain; charset=utf-8:
+              examples:
+                Message:
+                  value: Success
+          description: Success
+      tags:
+        - New Order
+  /update/{id}:
+    summary: Update the state of an order.
+    description: >-
+      This path is used to update the state of an order with a matching id in
+      the orders.json file.
+    put:
+      summary: Update the state of an order
+      description: >-
+        This operation updates the `state` of an order with a matching id from
+        the orders.json file.
+      operationId: update_order
+      parameters:
+        - name: id
+          in: path
+          description: The id of the order.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: A state string
+        content:
+          text/plain:
+            schema:
+              type: string
+      responses:
+        '400':
+          content:
+            text/plain; charset=utf-8:
+              examples:
+                Error:
+                  value: Invalid Argument
+          description: Invalid Argument Provided
+        '200':
+          content:
+            text/plain; charset=utf-8:
+              examples:
+                Message:
+                  value: Success
+          description: Success
+      tags:
+        - Update Order
+  /delete/{id}:
+    summary: Delete an order
+    description: >-
+      This path is used to delete an order with a matching id from the
+      orders.json file.
+    delete:
+      summary: Deletes an order
+      description: >-
+        This operation deletes an order with a matching id from the orders.json
+        file
+      operationId: delete_order
+      parameters:
+        - name: id
+          in: path
+          description: The id of the order.
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          content:
+            text/plain; charset=utf-8:
+              examples:
+                Error:
+                  value: Invalid Argument
+          description: Invalid Argument Provided
+        '200':
+          content:
+            text/plain; charset=utf-8:
+              examples:
+                Message:
+                  value: Success
+          description: Success
+
+      tags:
+        - Delete Order
+components:
+  schemas:
+    Order:
+      type: object
+      properties:
+        name:
+          type: string
+        id:
+          type: string
+        state:
+          type: string
+      xml:
+        name: Order
