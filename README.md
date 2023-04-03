@@ -72,6 +72,7 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Github Auth](express-section/github-auth)
 - **API Development with Swagger
   - [Orders](api-development/orders)
+  - [Creating REST API Endpoints for a Book Store](api-development/book-store)
 - **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
   - [Linked Lists](linear-data-structures/linked-lists/)

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 75%;
+    margin: auto;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+.add-new{
+    border: solid 1px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.existing-books{
+    margin-top: 50px;
+}
+
+/*.existing-books .MuiFormControl-root {*/
+/*    padding-right: 24px !important;*/
+/*}*/
+
+.existing-books .MuiButton-root{
+    margin-right: 6px;
+}
+
+.MuiListItem-root{
+    margin-right: 12px
+}
+
+.css-1p5q5e5-MuiStack-root, .css-nen11g-MuiStack-root{
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.css-nen11g-MuiStack-root{
+    margin-bottom: 24px;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    flex-grow: 1;
+    margin-right: 16px !important;
+}
