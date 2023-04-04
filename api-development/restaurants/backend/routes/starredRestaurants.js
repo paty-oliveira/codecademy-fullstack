@@ -2,6 +2,7 @@ const express = require("express");
 const { v4: uuidv4 } = require("uuid");
 const router = express.Router();
 const ALL_RESTAURANTS = require("./restaurants").restaurants;
+const {getStarredRestaurantInfo} = require("../utils/utils");
 
 /**
  * A list of starred restaurants.
@@ -28,19 +29,7 @@ router.get("/", (req, res) => {
    * We need to join our starred data with the all restaurants data to get the names.
    * Normally this join would happen in the database.
    */
-  const joinedStarredRestaurants = STARRED_RESTAURANTS.map(
-    (starredRestaurant) => {
-      const restaurant = ALL_RESTAURANTS.find(
-        (restaurant) => restaurant.id === starredRestaurant.restaurantId
-      );
-
-      return {
-        id: starredRestaurant.id,
-        comment: starredRestaurant.comment,
-        name: restaurant.name,
-      };
-    }
-  );
+  const joinedStarredRestaurants = getStarredRestaurantInfo(ALL_RESTAURANTS, STARRED_RESTAURANTS);
 
   res.json(joinedStarredRestaurants);
 });
@@ -48,7 +37,19 @@ router.get("/", (req, res) => {
 /**
  * Feature 7: Getting a specific starred restaurant.
  */
+router.get("/:id", (req, res) => {
+  const { id } = req.params;
 
+  const joinedStarredRestaurants = getStarredRestaurantInfo(ALL_RESTAURANTS, STARRED_RESTAURANTS);
+
+  const restaurant = joinedStarredRestaurants.find((restaurant) => restaurant.id === id);
+
+  if (restaurant) {
+    res.send(restaurant)
+  }
+
+  return res.sendStatus(404);
+})
 
 
 /**
