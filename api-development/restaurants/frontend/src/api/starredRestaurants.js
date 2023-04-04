@@ -1,12 +1,10 @@
-import { API_ENDPOINT } from "./index";
+import {API_ENDPOINT} from "./index";
 
 const BASE_API_ROUTE = `${API_ENDPOINT}/restaurants/starred`;
 
 export const getStarredRestaurants = async () => {
   const response = await fetch(`${BASE_API_ROUTE}`);
-  const json = await response.json();
-
-  return json;
+  return await response.json();
 };
 
 export const unstarRestaurant = async (id) => {

@@ -1,14 +1,15 @@
-import { API_ENDPOINT } from "./index";
+import {API_ENDPOINT} from "./index";
+
+const BASE_API_ROUTE = `${API_ENDPOINT}/restaurants`;
 
 export const getRestaurants = async () => {
-  const response = await fetch(`${API_ENDPOINT}/restaurants`);
-  const restaurants = await response.json();
+  const response = await fetch(`${BASE_API_ROUTE}`);
 
-  return restaurants;
+  return await response.json();
 };
 
 export const addNewRestaurant = async (newName) => {
-  const response = await fetch(`${API_ENDPOINT}/restaurants`, {
+  const response = await fetch(`${BASE_API_ROUTE}`, {
     method: "POST",
     body: JSON.stringify({
       name: newName,
@@ -18,13 +19,11 @@ export const addNewRestaurant = async (newName) => {
     },
   });
 
-  const newRestaurant = await response.json();
-
-  return newRestaurant;
+  return await response.json();
 };
 
 export const deleteRestaurant = async (id) => {
-  const response = await fetch(`${API_ENDPOINT}/restaurants/${id}`, {
+  const response = await fetch(`${BASE_API_ROUTE}/${id}`, {
     method: "DELETE",
   });
 
@@ -32,7 +31,7 @@ export const deleteRestaurant = async (id) => {
 };
 
 export const updateRestaurantName = async (id, newName) => {
-  const response = await fetch(`${API_ENDPOINT}/restaurants/${id}`, {
+  const response = await fetch(`${BASE_API_ROUTE}/${id}`, {
     method: "PUT",
     body: JSON.stringify({
       newName,
@@ -46,7 +45,7 @@ export const updateRestaurantName = async (id, newName) => {
 };
 
 export const starRestaurant = async (id) => {
-  const response = await fetch(`${API_ENDPOINT}/restaurants/starred`, {
+  const response = await fetch(`${BASE_API_ROUTE}/starred`, {
     method: "POST",
     body: JSON.stringify({
       id,
