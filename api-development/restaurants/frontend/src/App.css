@@ -1,0 +1,56 @@
+.App{
+  width: 70%;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.column{
+  width: 50%;
+  float: left;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+h3{
+  margin: 10px;
+}
+
+p{
+  margin: 10px 0px;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+#restaurants{
+  margin: 7%;
+}
+
+.restaurant-buttons{
+  margin-top: 5px;
+}
+
+.restaurant-list{
+  margin-bottom: 12px;
+  text-align: center;
+  background-color: #FFF3AD;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+#add-new{
+  text-align: center;
+}
+
+.starred-restaurant{
+  text-align: center;
+  color: white;
+  background-color: #553E4E;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
