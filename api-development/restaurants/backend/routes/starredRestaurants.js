@@ -40,9 +40,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   const { id } = req.params;
 
-  const joinedStarredRestaurants = getStarredRestaurantInfo(ALL_RESTAURANTS, STARRED_RESTAURANTS);
-
-  const restaurant = joinedStarredRestaurants.find((restaurant) => restaurant.id === id);
+  const restaurant = STARRED_RESTAURANTS.find((restaurant) => restaurant.id === id);
 
   if (restaurant) {
     res.send(restaurant)
@@ -55,7 +53,30 @@ router.get("/:id", (req, res) => {
 /**
  * Feature 8: Adding to your list of starred restaurants.
  */
+router.post("/", (req, res) => {
+  const { id } = req.body;
 
+  const restaurant = ALL_RESTAURANTS.find((restaurant) => restaurant.id === id);
+
+  if (restaurant) {
+    res.status(404);
+    return;
+  }
+
+  const newStarredRestaurant = {
+    id: uuidv4(),
+    restaurantId: restaurant.id,
+    comment: ""
+  };
+
+  STARRED_RESTAURANTS.push(newStarredRestaurant);
+
+  res.status(200).send({
+    id: newStarredRestaurant.id,
+    comment: newStarredRestaurant.comment,
+    name: restaurant.name
+  })
+})
 
 
 /**
