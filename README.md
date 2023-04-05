@@ -74,6 +74,7 @@ The path is divided in several topics and learning goals. Each topic addresses t
   - [Orders](api-development/orders)
   - [Creating REST API Endpoints for a Book Store](api-development/book-store)
   - [RESTful Restaurants](api-development/restaurants)
+  - [Full-Stack Expenses App](api-development/expenses)
 - **Linear Data Structures**
   - [Nodes](linear-data-structures/nodes/)
   - [Linked Lists](linear-data-structures/linked-lists/)

@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+#root{
+  width: 80%;
+  margin: 32px auto;
+}
+
+#panel{
+  margin: 32px 0px;
+}
+
+.MuiButtonBase-root{
+  margin-left: 8px;
+}
+
+div#new-date .MuiTextField-root{
+  width: 100%;
+  margin-top: 10px;
+}
